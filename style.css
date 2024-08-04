@@ -1,0 +1,80 @@
+/* Global CSS */
+* {
+    background-color: #041122;
+    color: #6de97c;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+a {
+    color: #7fdbff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #e6f99d; 
+}
+
+/* Scaling headings after changing base font, prolly a bad way to do it */
+h2 {
+    font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #2ac098;
+}
+
+
+/* Center Content */
+#site-content {
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Style tagline and socials */
+header .tagline {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+header .tagline h3 {
+    margin: 0;
+}
+
+header .tagline nav {
+    margin-left: auto;
+}
+
+header .tagline nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .tagline nav ul li {
+    margin: 0 30px;
+}
+
+
+.icons {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+}
