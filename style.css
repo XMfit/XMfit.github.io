@@ -16,6 +16,10 @@ a:hover{
 }
 
 /* Scaling headings after changing base font, prolly a bad way to do it */
+h1 {
+    font-size: 2.25rem;
+}
+
 h2 {
     font-size: 1.875rem;
 }
@@ -43,6 +47,28 @@ h1, h2, h3, h4, h5 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+/* 404 Page Stuff */
+.error-code{
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+#error-p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#error-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 425px;
+    height: auto;
 }
 
 /* Style tagline and socials */
