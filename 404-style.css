@@ -1,0 +1,19 @@
+/* 404 Page Styles */
+.error-code {
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+#error-p {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#error-img {
+    display: block;
+    margin: 10px auto 0;
+    width: 425px;
+    height: auto;
+}

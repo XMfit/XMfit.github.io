@@ -11,11 +11,11 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-    color: #e6f99d; 
+a:hover {
+    color: #e6f99d;
 }
 
-/* Scaling headings after changing base font, prolly a bad way to do it */
+/* Headings */
 h1 {
     font-size: 2.25rem;
 }
@@ -40,43 +40,17 @@ h1, h2, h3, h4, h5 {
     color: #2ac098;
 }
 
-
 /* Center Content */
 #site-content {
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 1% auto 0;
     width: 50%;
 }
 
-/* 404 Page Stuff */
-.error-code{
-    text-align: center;
-    margin: 0 auto;
-    padding: 5px 0;
-}
-
-#error-p {
-    text-align: center;
-    margin: 0 auto;
-    padding: 10px 0;
-}
-
-#error-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    width: 425px;
-    height: auto;
-}
-
-/* Style tagline and socials */
+/* Tagline and Socials */
 header .tagline {
     display: flex;
     align-items: center;
-    padding: 10px;
-    padding-left: 0px;
+    padding: 10px 0 10px 0;
 }
 
 header .tagline h3 {
@@ -97,7 +71,6 @@ header .tagline nav ul {
 header .tagline nav ul li {
     margin: 0 30px;
 }
-
 
 .icons {
     width: 25px;
