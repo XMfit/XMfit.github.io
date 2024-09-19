@@ -1,0 +1,39 @@
+/* Style for the project heading */
+.proj h5 {
+    position: relative;
+    padding-bottom: 5px; /* Adds space between the text and underline */
+    margin-bottom: 10px;
+}
+
+.proj h5:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%; /* Make the underline half the width of the heading */
+    border-bottom: 1px solid #6de97c; /* Thin underline */
+}
+
+
+/* Style for the paragraph in each project */
+.proj p {
+    margin-bottom: 5px; /* Raise the paragraph closer to the heading */
+}
+
+.proj ul {
+    list-style: '- ';
+}
+
+.proj a {
+    margin-top: 5px; /* Increase spacing above the link */
+    display: inline-block; /* Ensure the margin affects the link properly */
+}
+
+.proj code {
+    background-color: #505050;
+}
+
+/* Adjust spacing between each project */
+.proj {
+    margin-bottom: 15px;
+}
