@@ -11,7 +11,7 @@
     left: 0;
     bottom: 0;
     width: 50%; /* Make the underline half the width of the heading */
-    border-bottom: 1px solid #6de97c; /* Thin underline */
+    border-bottom: 1px solid #262626; /* Thin underline */
 }
 
 
@@ -30,10 +30,11 @@
 }
 
 .proj code {
-    background-color: #505050;
+    background-color: #f5f5f5;
 }
 
 /* Adjust spacing between each project */
 .proj {
     margin-bottom: 15px;
 }
+
