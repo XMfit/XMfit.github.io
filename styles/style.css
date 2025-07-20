@@ -1,20 +1,20 @@
 /* Global CSS */
 * {
-    background-color: #dcdcdc;
-    color: #3f3f3f;
+    background-color: #002933;
+    color: #839496;
     font-family: monospace;
     font-size: 16.5px;
 }
 
 a {
-    color: #005f8a;
+    color: #eee8d5;
     text-decoration: none;
     font-size: 18px;
 }
 
 a:hover {
-    color: #004766;
-    text-decoration: underline;
+    color: #2aa198;
+    /*text-decoration: underline; */
 }
 
 /* Headings */
@@ -40,7 +40,7 @@ h5 {
 }
 
 h1, h2, h3, h4, h5 {
-    color: #262626;
+    color: #93a1a1;
 }
 
 h2 {
@@ -84,8 +84,33 @@ header .tagline nav ul li {
 }
 
 .icons {
-    width: 25px;
+    width: 20px;
     height: auto;
     vertical-align: middle;
+}
+
+header .tagline {
+    display: flex;
+    flex-wrap: wrap;  /* Allow elements to wrap when space is tight */
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;  /* Optional: add space between wrapped items */
+    padding: 10px 0;
+}
+
+@media (max-width: 600px) {
+    header .tagline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .tagline nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    header .tagline nav ul li {
+        margin: 0;
+    }
 }
 

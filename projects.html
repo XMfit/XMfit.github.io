@@ -12,49 +12,79 @@
         <header>
             <h2>Thomas Johnson</h2>
             <div class="tagline">
-                <h3>Aspiring Software Engineer</h3>
+                <h3>Current Projects</h3>
                 <nav class="socials">
                     <ul>
                         <li>
-                            <a href="index.html"> Home </a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
                             <a target="_blank" href="https://github.com/XMfit">
-                                Github <img class="icons" src="images/github-mark-black.png" alt="Github">
+                                Github
+                                <img class="icons" src="images/github-mark-white.png" alt="Github">
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.linkedin.com/in/thomas-johnson-33046921a/">
-                                LinkedIn <img class="icons" src="images/linkedIn-blue.png" alt="LinkedIn">
+                                LinkedIn
+                                <img class="icons" src="images/linkedIn-white.png" alt="LinkedIn">
                             </a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header>
+
         <main>
             <article>
-                <h4>Current Projects</h4>
+               <!--<h4>Current Projects</h4> -->
                 <p>
-                    Here you can find an ever-growing list of all the new projects I'd like to learn about and build. 
-                    It'll be a mix of completed projects and works in progress.
+                    Mostly quick fun projects that I had the urge to work on for some reason or another.
                 </p>
+
                 <div class="proj">
                     <h5>CHIP-8 Emulator</h5>
                     <p>
                         An implementation of the CHIP-8 emulator in C
                     </p>
-                    <ul> 
-                        <li>Emulated the CHIP-8 CPU architecture in C using the SDL library to render graphics.</li> 
-                        <li>Fetch / Decode / Run cycle implementing all 35 CHIP-8 opcodes.</li> 
+                    <ul>
+                        <li>Emulated the CHIP-8 CPU architecture in C using the SDL library to render graphics.</li>
+                        <li>Fetch / Decode / Run cycle implementing all 35 CHIP-8 opcodes.</li>
                         <li>Debugging mode allowing users to step through each emulation cycle, printing registers and flags.</li>
                     </ul>
                     <a target="_blank" href="https://github.com/XMfit/CHIP8">Code</a>
                 </div>
+
+                <div class="proj">
+                    <h5>TCP File Server</h5>
+                    <p>
+                        A simple server and client I made to download files from laptop to laptop on my local network.
+                    </p>
+                    <ul>
+                        <li>Developed a simple TCP server that supports multiple clients to download up to 10 files in one connection.</li>
+                        <li>Followed network programming best practices by creating an IP agnostic server, and converting back and forth from host to network byte order when sending / receiving.</li>
+                        <li>Sends file information in stages allowing for accurate reconstruction of files. Implementing chunked buffer sending for very large files (8GB+) soon TM.</li>
+                    </ul>
+                    <a target="_blank" href="https://github.com/XMfit/tcp-file-server">Code</a>
+                </div>
+
+                <div class="proj">
+                    <h5>Image to Ascii</h5>
+                    <p>
+                        A fun little command line program to take an image and turn it into ascii art
+                    </p>
+                    <ul>
+                        <li>Used the <a target="_blank" href="https://github.com/nothings/stb/tree/master">std_image library</a> to decode supported file types.</li>
+                        <li>Grabbed terminal and image dimensions for scaling and calculating downsampling amount.</li>
+                        <li>Grayscaled pixel data, applied gamma correction, and printed the applicable symbol to the terminal, and to the out file.</li>
+                    </ul>
+                    <a target="_blank" href="https://github.com/XMfit/img-to-ascii/">Code</a>
+                </div>
+
                 <div class="proj">
                     <h5>Mini Shell</h5>
                     <p>
-                        A simple shell coded in C to help me learn more about OS concepts. 
+                        A fun little shell using GNU Readline, pipes, and forks!
                     </p>
                     <ul>
                         <li>A RPEL environment to parse commands and execute a shell function, or create a new process.</li>
@@ -63,23 +93,26 @@
                     </ul>
                     <a target="_blank" href="https://github.com/XMfit/mini-shell">Code</a>
                 </div>
+
                 <div class="proj">
                     <h5>Custom Memory Allocator</h5>
                     <p>
-                        Creating my own memory allocation library via <code>mmap</code> to learn more about the workings of the heap.
+                        Making my own little memory allocator via <code>mmap</code> for educational purposes.
                     </p>
                     <ul>
-                        <li>Functionality to initalize, and destroy heap via mapping and unmapping a memory map.</li>
-                        <li>Ability to <code>malloc()</code> and <code>free()</code> memory dynamically with coalescing.</li>
-                        <li>Implementation of more advanced functions such as <code>calloc()</code> and <code>realloc()</code>.</li>
+                        <li>Create a heap for dynimcally allocated memory via a memory map. Initialized and destroyed appropriately.</li>
+                        <li>Includes the <code>malloc()</code> function family and <code>free()</code> to manage dynmically allocated memory as expected.</li>
+                        <li>Includes memory coalescing for efficient memory allocation, alignment of memory, and helper functions such as <code>memcopy()</code> and <code>memset()</code>.</li>
                     </ul>
                     <a target="_blank" href="https://github.com/XMfit/memor-allocator">Code</a>
                 </div>
             </article>
         </main>
+
         <footer>
             <!-- Maybe I'll put something here idk -->
         </footer>
     </div>
 </body>
 </html>
+
